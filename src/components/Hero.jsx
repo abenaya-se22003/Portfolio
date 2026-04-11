@@ -73,9 +73,7 @@ export function Hero() {
                         color: 'var(--text-secondary)'
                     }}>
 
-                    I'm a full-stack developer and designer specializing in building
-                    exceptional digital experiences. Currently, I'm focused on building
-                    accessible, human-centered products at{' '}
+                    I'm a full-stack developer and designer specializing in building exceptional digital experiences. I also focus on Generative AI, creating intelligent and innovative solutions that enhance user interaction and automation. Currently, I'm dedicated to building accessible, human-centered products that combine modern web technologies with AI-driven capabilities
                     <span
                         style={{
                             color: 'var(--accent)'
