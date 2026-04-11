@@ -3,36 +3,34 @@ import { motion } from 'framer-motion';
 import { GraduationCapIcon, CalendarIcon } from 'lucide-react';
 const education = [
 {
-  degree: 'Bachelor of Science in Computer Science',
-  institution: 'University of Colombo',
-  period: '2018 — 2022',
+  degree: 'Bachelor of Science in Software Engineering',
+  institution: 'University of Kelaniya',
+  period: '2024 — 2028',
   description:
   'Focused on software engineering, data structures, and algorithms. Graduated with First Class Honours. Active member of the university coding club and hackathon organizer.',
   highlights: [
-  'First Class Honours',
-  "Dean's List 2020–2022",
-  'Best Final Year Project Award']
+  'Second Upper class Honours','GPA - 3.68']
 
 },
 {
-  degree: 'Diploma in Web Development',
-  institution: 'NIBM Sri Lanka',
-  period: '2017 — 2018',
+  degree: 'Diploma in Bachelor of IT (BIT)',
+  institution: 'University of Colombo',
+  period: '2022 — 2023',
   description:
   'Intensive program covering full-stack web development with modern JavaScript frameworks, databases, and deployment strategies.',
   highlights: [
   'Full-Stack Development',
   'Database Design',
-  'Cloud Deployment']
+  ]
 
 },
 {
   degree: 'GCE Advanced Level — Physical Science',
-  institution: 'Royal College, Colombo',
-  period: '2014 — 2016',
+  institution: 'Kegalu Vidyalaya, Kegalle',
+  period: '2007 — 2020',
   description:
   'Combined Mathematics, Physics, and Chemistry. Achieved district-level ranking in the national examination.',
-  highlights: ['3A Passes', 'District Rank Top 50']
+  highlights: ['2A Passes', '1C Pass', 'District Rank Top 100','Z score - 1.59']
 }];
 
 export function Education() {
