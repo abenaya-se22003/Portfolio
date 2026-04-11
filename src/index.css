@@ -13,6 +13,8 @@
   --accent-hover: #a78bfa;
   --accent-subtle: rgba(139, 92, 246, 0.1);
   --accent-border: rgba(139, 92, 246, 0.3);
+  --accent-muted: rgba(139, 92, 246, 0.4);
+  --text-muted: #4a4a5a;
   --border: rgba(255, 255, 255, 0.08);
 }
 
@@ -28,6 +30,8 @@
   --accent-hover: #6d28d9;
   --accent-subtle: rgba(124, 58, 237, 0.08);
   --accent-border: rgba(124, 58, 237, 0.25);
+  --accent-muted: rgba(124, 58, 237, 0.35);
+  --text-muted: #8a8a9a;
   --border: rgba(0, 0, 0, 0.08);
 }
 
