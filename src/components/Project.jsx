@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, ExternalLink } from 'lucide-react';
+import MERN from '../assets/MERN.jpeg';
+import Ecom from '../assets/ecom.png';
+import Coffee from '../assets/coffee.jpeg';
 
 const GithubIcon = ({ size = 24, ...props }) => (
   <svg
@@ -18,42 +21,37 @@ const GithubIcon = ({ size = 24, ...props }) => (
 
 const projects = [
 {
-  title: 'Halcyon Theme',
+  title: 'Login_Signup_Page With MERN',
   description:
-  'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace.',
-  tech: ['VS Code', 'Sublime Text', 'Atom'],
-  image:
-  'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80',
-  github: '#',
-  external: '#'
+    'A full-stack authentication system built using the MERN stack (MongoDB, Express, React, Node.js). It supports secure user and admin login with JWT-based authentication, protected routes, and role-based access control. The application also integrates Google OAuth for seamless social login. All HTTP requests are handled through a RESTful API, ensuring efficient client-server communication and secure data handling.',
+  tech: ['MongoDB', 'Express', 'React', 'Node.js', 'JWT', 'Google OAuth'],
+  image: MERN,
+  github: 'https://github.com/abenaya-se22003/login_Registration',
+  external: 'https://medium.com/@akilaabenayaka27/architecting-secure-identity-a-deep-dive-into-mern-stack-authentication-google-oauth-integration-79abd5136bba'
 },
 {
-  title: 'Spotify Profile',
+  title: 'E-Commerce Website using React',
   description:
-  'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information.',
-  tech: ['React', 'Express', 'Spotify API', 'Styled Components'],
-  image:
-  'https://images.unsplash.com/photo-1611339555312-e607c8352fd7?w=800&q=80',
-  github: '#',
-  external: '#'
+    'A modern e-commerce web application built with React, featuring a responsive UI and dynamic product listings. Users can browse products, view detailed product pages, add items to the cart, and manage their shopping experience seamlessly. The application integrates RESTful APIs for handling product data and user interactions, ensuring smooth and efficient performance.',
+  tech: ['React', 'JavaScript', 'REST API', 'CSS'],
+  image: Ecom,
+  github: 'https://github.com/abenaya-se22003/ecommerce-frontend',
+  external: 'https://www.linkedin.com/posts/akila-abenayaka-2a2451355_this-project-helped-me-dive-deeper-into-front-end-activity-7386683163248336896-iSK2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFiFXVoBGkC2xbmBKA7whmFPq5g3sX0FRHk'
 },
 {
-  title: 'Build a Spotify Connected App',
+  title: 'Coffee Shop Website',
   description:
-  'Video course that teaches how to build a web app with the Spotify Web API. Topics include REST APIs, auth flows, Node, Express, React, and more.',
-  tech: ['React', 'Express', 'Spotify API'],
-  image:
-  'https://images.unsplash.com/photo-1516280440502-a2989cb51bf1?w=800&q=80',
-  github: '#',
-  external: '#'
-},
-{
-  title: 'Time to Have More Fun',
+    'A responsive coffee shop website built using HTML, CSS, and JavaScript as my first web development project. It features a clean and modern UI with sections for menu, services, and contact information. The project focuses on fundamental front-end skills such as layout design, styling, and basic interactivity, providing a smooth and user-friendly browsing experience.',
+  tech: ['HTML', 'CSS', 'JavaScript'],
+  image: Coffee,
+  github: 'https://github.com/abenaya-se22003/Coffee-Shop',
+  external: 'https://www.linkedin.com/posts/akila-abenayaka-2a2451355_webdevelopment-firstproject-html-activity-7326650903757824000-MwMi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFiFXVoBGkC2xbmBKA7whmFPq5g3sX0FRHk'
+},{
+  title: 'pending project',
   description:
-  'A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS.',
-  tech: ['Next.js', 'Tailwind CSS', 'Firebase'],
-  image:
-  'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80',
+    '',
+  tech: [],
+  image: '',
   github: '#',
   external: '#'
 }];
