@@ -59,13 +59,13 @@ export function Contact() {
     {
       icon: <Phone size={22} />,
       label: 'Phone',
-      value: '+94 71 480 9039',
-      href: 'tel:+94714809039'
+      value: '+94 71 4604907',
+      href: 'tel:+94714604907'
     },
     {
       icon: <MapPin size={22} />,
       label: 'Location',
-      value: 'Walasmulla, Sri Lanka',
+      value: 'Kegalle, Sri Lanka',
       href: null
     }
   ];
