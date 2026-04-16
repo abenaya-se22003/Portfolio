@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { MenuIcon, XIcon, SunIcon, MoonIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from './ThemeContext';
+import resumePdf from '../assets/certificate 1.pdf';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -101,7 +102,8 @@ export function Navbar() {
           </button>
 
           <a
-            href="#contact"
+            href={resumePdf}
+            download="Resume.pdf"
             className="ml-2 px-5 py-2.5 text-sm font-mono rounded transition-colors"
             style={{
               color: 'var(--accent)',
@@ -170,7 +172,8 @@ export function Navbar() {
                 </a>
               ))}
               <a
-                href="#contact"
+                href={resumePdf}
+                download="Resume.pdf"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="mt-4 px-6 py-3 text-center font-mono rounded border transition-colors"
                 style={{
