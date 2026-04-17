@@ -41,6 +41,11 @@ export function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    
+    // Open email client via mailto
+    const mailtoLink = `mailto:akilaabenayaka27@gmail.com?subject=${encodeURIComponent(formData.subject || 'Portfolio Contact')}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
+    window.location.href = mailtoLink;
+
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
