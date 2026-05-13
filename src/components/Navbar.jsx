@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { MenuIcon, XIcon, SunIcon, MoonIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from './ThemeContext';
-import resumePdf from '../assets/certificate 1.pdf';
+import resumePdf from '../assets/SE-2022-003_Akila_CV.pdf';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +35,7 @@ export function Navbar() {
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'Resume.pdf';
+        a.download = 'SE-2022-003_Akila_CV.pdf';
         document.body.appendChild(a);
         a.click();
         a.remove();
