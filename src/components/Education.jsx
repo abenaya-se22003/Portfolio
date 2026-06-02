@@ -9,7 +9,7 @@ const education = [
   description:
   'Focused on software engineering, data structures, and algorithms. Graduated with First Class Honours. Active member of the university coding club and hackathon organizer.',
   highlights: [
-  'Second Upper (currently)','GPA - 3.68']
+  'First class (currently)','GPA - 3.72']
 
 },
 {

@@ -46,3 +46,41 @@ body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Orbit Animations */
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes counter-orbit {
+  0% {
+    transform: rotate(0deg) scaleY(2.08); /* 1 / 0.48 = 2.08 to offset scaleY(0.48) */
+  }
+  100% {
+    transform: rotate(-360deg) scaleY(2.08);
+  }
+}
+
+.orbit-container {
+  transform: scaleY(0.48);
+}
+
+.orbit-wrapper {
+  animation: orbit 40s linear infinite;
+}
+
+.orbit-card-wrapper {
+  animation: counter-orbit 40s linear infinite;
+}
+
+/* Pause all orbit animations when any card wrapper is hovered */
+.orbit-container:has(.orbit-card-wrapper:hover) .orbit-wrapper,
+.orbit-container:has(.orbit-card-wrapper:hover) .orbit-card-wrapper {
+  animation-play-state: paused;
+}
+

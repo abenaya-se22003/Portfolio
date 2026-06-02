@@ -3,6 +3,15 @@ import { motion } from 'framer-motion';
 import { ChevronDownIcon } from 'lucide-react';
 import heroi from '../assets/heroi.png';
 
+const orbitSkills = [
+    { name: 'Jenkins', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg' },
+    { name: 'Terraform', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg' },
+    { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+    { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+    { name: 'Kubernetes', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg' },
+    { name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg' }
+];
+
 export function Hero() {
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -109,20 +118,61 @@ export function Hero() {
                         }}
                     />
 
+                    {/* Orbit Container (scaled vertically to form an ellipse) */}
+                    <div className="absolute w-[85%] h-[85%] flex items-center justify-center pointer-events-none orbit-container z-0">
+                        {/* Faint Orbit Path Line */}
+                        <div className="absolute w-full h-full rounded-full border border-dashed border-gray-400/20 dark:border-zinc-700/20" />
+
+                        {/* Orbiting Cards */}
+                        {orbitSkills.map((skill, index) => {
+                            const delay = -(index * (40 / orbitSkills.length));
+                            return (
+                                <div
+                                    key={skill.name}
+                                    className="absolute w-full h-full flex items-center justify-center pointer-events-none orbit-wrapper"
+                                    style={{
+                                        animationDelay: `${delay}s`,
+                                    }}
+                                >
+                                    <div
+                                        className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-auto orbit-card-wrapper"
+                                        style={{
+                                            animationDelay: `${delay}s`,
+                                        }}
+                                    >
+                                        {/* Card Box with theme, shadows and hover scaling */}
+                                        <div className="group relative w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-zinc-900 border border-black/10 dark:border-white/10 rounded-xl md:rounded-2xl shadow-md dark:shadow-zinc-950/40 flex items-center justify-center transition-all duration-300 hover:scale-115 hover:shadow-lg hover:border-purple-500/50 dark:hover:border-purple-500/50 cursor-pointer">
+                                            <img
+                                                src={skill.icon}
+                                                alt={skill.name}
+                                                className="w-6 h-6 md:w-7 md:h-7 object-contain"
+                                                loading="lazy"
+                                            />
+                                            {/* Tooltip */}
+                                            <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 text-xs font-mono py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap shadow-sm">
+                                                {skill.name}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+
                     <motion.img
                         src={heroi}
                         alt="Hero illustration"
-                        className="relative w-full max-w-md lg:max-w-lg xl:max-w-xl object-contain drop-shadow-2xl"
+                        className="relative w-full max-w-md lg:max-w-lg xl:max-w-xl object-contain drop-shadow-2xl z-10"
                         animate={{
-                            x: [0, -8, 0],
-                            y: [0, -8, 0],
+                            y: [0, -10, 0],
                         }}
                         transition={{
                             repeat: Infinity,
-                            duration: 2,
+                            duration: 4,
                             ease: 'easeInOut',
                         }}
                         style={{
+                            clipPath: 'polygon(32% 10%, 68% 10%, 75% 32%, 75% 65%, 68% 85%, 32% 85%, 25% 65%, 25% 32%)',
                             filter: 'drop-shadow(0 20px 40px rgba(139, 92, 246, 0.15))',
                         }}
                     />
