@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDownIcon } from 'lucide-react';
 import heroi from '../assets/heroi.png';
 
 const orbitSkills = [
@@ -178,29 +177,6 @@ export function Hero() {
                     />
                 </motion.div>
             </div>
-
-            {/* Scroll Indicator */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.5, duration: 1 }}
-                className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-                style={{ color: 'var(--text-muted)' }}
-            >
-                <span className="font-mono text-xs tracking-widest uppercase">
-                    Scroll
-                </span>
-                <motion.div
-                    animate={{ y: [0, 8, 0] }}
-                    transition={{
-                        repeat: Infinity,
-                        duration: 1.5,
-                        ease: 'easeInOut',
-                    }}
-                >
-                    <ChevronDownIcon size={20} />
-                </motion.div>
-            </motion.div>
         </section>
     );
 }
