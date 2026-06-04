@@ -3,6 +3,15 @@ import { motion } from 'framer-motion';
 import { ArrowRightIcon, ClockIcon } from 'lucide-react';
 const posts = [
 {
+  title: 'Building a Resilient Chatbot with Gemini, Streamlit, and Neon',
+  excerpt:
+    'Learn how I developed a Hybrid RAG AI Assistant powered by Gemini 2.5 Flash with PostgreSQL (Neon), pgvector, semantic search, document retrieval, persistent chat history, and real-time streaming responses. This article explores the architecture, implementation challenges, and lessons learned while building a modern AI application.',
+  date: 'Jul 28, 2025',
+  readTime: '8 min read',
+  tags: ['Generative AI', 'Gemini 2.5 Flash', 'RAG', 'LLM', 'PostgreSQL', 'Neon', 'Streamlit', 'Python'],
+  link: 'https://medium.com/@akilaabenayaka27/building-a-resilient-chatbot-how-i-built-an-ai-assistant-with-gemini-streamlit-and-neon-4c8928b313c6'
+},
+{
   title: 'Architecting Secure Identity: A Deep Dive into MERN Stack Authentication & Google OAuth Integration',
   excerpt:
     'An in-depth exploration of building secure authentication systems using the MERN stack, covering JWT-based authentication, role-based access control, and seamless Google OAuth integration for modern web applications.',
