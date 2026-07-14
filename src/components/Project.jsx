@@ -5,6 +5,8 @@ import MERN from '../assets/MERN.jpeg';
 import Ecom from '../assets/ecom.png';
 import Coffee from '../assets/coffee.jpeg';
 import AI_Assistant from '../assets/ai.jpeg';
+import ecom from '../assets/ecome.jpeg';
+import hotel from '../assets/hotel.jpeg';
 
 const GithubIcon = ({ size = 24, ...props }) => (
   <svg
@@ -21,6 +23,65 @@ const GithubIcon = ({ size = 24, ...props }) => (
 
 
 const projects = [
+  {
+  title: 'Velora E-Commerce Platform',
+  description:
+    'A full-stack e-commerce platform built with the MERN stack, featuring secure JWT authentication, role-based access, product management, Stripe payment integration, and Cloudinary-powered image management. The application provides a responsive shopping experience with efficient state management using Redux Toolkit and RESTful APIs for seamless client-server communication.',
+  tech: [
+    'MongoDB',
+    'Express',
+    'React',
+    'Node.js',
+    'Redux Toolkit',
+    'Stripe',
+    'Cloudinary',
+    'JWT'
+  ],
+  image: ecom,
+  github: 'https://github.com/abenaya-se22003/Full_Stack_MERN_Project',
+  external: 'https://full-stack-mern-project-black.vercel.app/'
+},
+{
+  title: 'Gemini AI Assistant - Hybrid RAG Chatbot',
+  description:
+    'A production-style AI chatbot built with Google Gemini 2.5 Flash, Streamlit, PostgreSQL (Neon), and pgvector. Features a Hybrid RAG architecture that combines document-based knowledge retrieval with Gemini’s general knowledge, enabling intelligent responses from uploaded PDFs while maintaining broad conversational capabilities. Includes semantic search, vector embeddings, persistent chat history, multi-session management, and real-time streaming responses.',
+  tech: [
+    'Python',
+    'Streamlit',
+    'Google Gemini 2.5 Flash',
+    'PostgreSQL',
+    'Neon',
+    'pgvector',
+    'Sentence Transformers',
+    'RAG',
+    'Vector Search',
+    'Prompt Engineering'
+  ],
+  image: AI_Assistant,
+  github: 'https://github.com/abenaya-se22003/AI_ChatBot',
+  external: 'https://www.linkedin.com/posts/akila-abenayaka-2a2451355_gemini-ai-assistant-hybrid-rag-chatbot-ugcPost-7468316850096078848-QzpJ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFiFXVoBGkC2xbmBKA7whmFPq5g3sX0FRHk'
+},
+{
+  title: 'Distributed Hotel Room Reservation System',
+  description:
+    'A scalable hotel booking platform built using a Microservices Architecture with Spring Boot and React. The system features asynchronous service communication with RabbitMQ, secure OAuth2/OIDC authentication through Asgardeo (WSO2), service discovery using Netflix Eureka, and Docker-based containerization for streamlined deployment and high availability.',
+  tech: [
+    'Spring Boot',
+    'React',
+    'PostgreSQL',
+    'RabbitMQ',
+    'Asgardeo',
+    'OAuth2',
+    'OIDC',
+    'Netflix Eureka',
+    'Docker',
+    'Docker Compose'
+  ],
+  image: hotel,
+  github: 'https://github.com/abenaya-se22003/Microservices-project',
+  external: 'https://medium.com/@akilaabenayaka27/scaling-hotel-booking-systems-a-journey-into-microservices-with-spring-boot-rabbitmq-eureka-cb35455b533d'
+},
+
 {
   title: 'Login_Signup_Page With MERN',
   description:
@@ -48,26 +109,7 @@ const projects = [
   github: 'https://github.com/abenaya-se22003/Coffee-Shop',
   external: 'https://www.linkedin.com/posts/akila-abenayaka-2a2451355_webdevelopment-firstproject-html-activity-7326650903757824000-MwMi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFiFXVoBGkC2xbmBKA7whmFPq5g3sX0FRHk'
 },
-{
-  title: 'Gemini AI Assistant - Hybrid RAG Chatbot',
-  description:
-    'A production-style AI chatbot built with Google Gemini 2.5 Flash, Streamlit, PostgreSQL (Neon), and pgvector. Features a Hybrid RAG architecture that combines document-based knowledge retrieval with Gemini’s general knowledge, enabling intelligent responses from uploaded PDFs while maintaining broad conversational capabilities. Includes semantic search, vector embeddings, persistent chat history, multi-session management, and real-time streaming responses.',
-  tech: [
-    'Python',
-    'Streamlit',
-    'Google Gemini 2.5 Flash',
-    'PostgreSQL',
-    'Neon',
-    'pgvector',
-    'Sentence Transformers',
-    'RAG',
-    'Vector Search',
-    'Prompt Engineering'
-  ],
-  image: AI_Assistant,
-  github: 'https://github.com/abenaya-se22003/AI_ChatBot',
-  external: 'https://medium.com/@akilaabenayaka27/building-a-resilient-chatbot-how-i-built-an-ai-assistant-with-gemini-streamlit-and-neon-4c8928b313c6'
-},
+
 
 {
   title: 'pending project',
